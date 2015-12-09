@@ -1,6 +1,13 @@
-A simple example of a solution using domain, contracts, ports and adaptors. 
+A simple example of a solution using hexagonal architecture in the form of domain, ports and adaptors (both primary and secondary). 
 
 In collaboration with Daniel Portella.
+
+Some articles explaining hexagonal architecture:
+* My LateRooms blog post: (will be published on 14th December 2015)
+* Alistair Cockburn: http://alistair.cockburn.us/Hexagonal+architecture
+* Garfixia Software: http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html
+
+This is a Visual Studio .Net solution in C#. Hopefully the project structure is reasonably self-explanatory, as is the physical folder structure.
 
 OK, here are some very rough notes that I made after consulting with my colleagues on how I could make the awesome Making Bacon Pancakes song (from Adventure Time) be a theme tune for this project...
 
