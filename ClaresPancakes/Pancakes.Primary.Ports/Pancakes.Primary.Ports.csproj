@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6BD96BA0-F7AE-44B5-B6FB-B1A8F9ED245A}</ProjectGuid>
+    <ProjectGuid>{F758DDA4-5E81-4E91-8940-D9DA741FCACF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pancakes.Domain</RootNamespace>
-    <AssemblyName>Pancakes.Domain</AssemblyName>
+    <RootNamespace>Pancakes.Primary.Ports</RootNamespace>
+    <AssemblyName>Pancakes.Primary.Ports</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,18 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PancakeMaker2000.cs" />
+    <Compile Include="IPancakeMaker.cs" />
+    <Compile Include="Pancake.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Pancakes.Primary.Ports\Pancakes.Primary.Ports.csproj">
-      <Project>{f758dda4-5e81-4e91-8940-d9da741fcacf}</Project>
-      <Name>Pancakes.Primary.Ports</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Pancakes.Secondary.Ports\Pancakes.Secondary.Ports.csproj">
-      <Project>{E5BA0AA0-A849-4809-850E-EE61D790E28A}</Project>
-      <Name>Pancakes.Secondary.Ports</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

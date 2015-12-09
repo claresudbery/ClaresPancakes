@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("Pancakes.Domain")]
+[assembly: AssemblyTitle("Pancakes.Contracts")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Pancakes.Domain")]
+[assembly: AssemblyProduct("Pancakes.Contracts")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -22,7 +22,7 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 
-[assembly: Guid("bc78c290-5ada-45d8-9e33-6e5f1031d44e")]
+[assembly: Guid("928b9999-de22-4dd5-95f8-e3fd42f484a9")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6BD96BA0-F7AE-44B5-B6FB-B1A8F9ED245A}</ProjectGuid>
+    <ProjectGuid>{54DDE889-38AB-42E8-8D59-14ADCF24D1C0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pancakes.Domain</RootNamespace>
-    <AssemblyName>Pancakes.Domain</AssemblyName>
+    <RootNamespace>Pancakes.Service</RootNamespace>
+    <AssemblyName>Pancakes.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,16 +39,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PancakeMaker2000.cs" />
+    <Compile Include="PancakeMakerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Pancakes.Domain\Pancakes.Domain.csproj">
+      <Project>{6bd96ba0-f7ae-44b5-b6fb-b1a8f9ed245a}</Project>
+      <Name>Pancakes.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pancakes.Primary.Ports\Pancakes.Primary.Ports.csproj">
       <Project>{f758dda4-5e81-4e91-8940-d9da741fcacf}</Project>
       <Name>Pancakes.Primary.Ports</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Pancakes.Secondary.Adapters\Pancakes.MixDispenser.Breville\Pancakes.MixDispenser.Breville.csproj">
+      <Project>{aedf286c-fd3c-48fd-9d82-d328072e5edc}</Project>
+      <Name>Pancakes.MixDispenser.Breville</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pancakes.Secondary.Adapters\Pancakes.Oven.Bosch\Pancakes.Oven.Bosch.csproj">
+      <Project>{e2a9e9ab-64ad-4b2c-bab1-2b146696c207}</Project>
+      <Name>Pancakes.Oven.Bosch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pancakes.Secondary.Adapters\Pancakes.Oven.Hotpoint\Pancakes.Oven.Hotpoint.csproj">
+      <Project>{3309b779-6f3c-48f1-96f3-d7376d0b3780}</Project>
+      <Name>Pancakes.Oven.Hotpoint</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pancakes.Secondary.Ports\Pancakes.Secondary.Ports.csproj">
-      <Project>{E5BA0AA0-A849-4809-850E-EE61D790E28A}</Project>
+      <Project>{e5ba0aa0-a849-4809-850e-ee61d790e28a}</Project>
       <Name>Pancakes.Secondary.Ports</Name>
     </ProjectReference>
   </ItemGroup>
