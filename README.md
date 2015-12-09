@@ -9,6 +9,8 @@ Some articles explaining hexagonal architecture:
 
 This is a Visual Studio .Net solution in C#. Hopefully the project structure is reasonably self-explanatory, as is the physical folder structure.
 
+
+
 OK, here are some very rough notes that I made after consulting with my colleagues on how I could make the awesome Making Bacon Pancakes song (from Adventure Time) be a theme tune for this project...
 
 git web hook calls an API that uses the Sonos API
