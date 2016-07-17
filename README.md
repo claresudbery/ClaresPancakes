@@ -3,7 +3,7 @@ A simple example of a solution using hexagonal architecture in the form of domai
 In collaboration with Daniel Portella.
 
 Some articles explaining hexagonal architecture:
-* My LateRooms blog post: (will be published on 14th December 2015)
+* My LateRooms blog post: http://engineering.laterooms.com/hexagonal-architecture-in-practice/
 * Alistair Cockburn: http://alistair.cockburn.us/Hexagonal+architecture
 * Garfixia Software: http://www.dossier-andreas.net/software_architecture/ports_and_adapters.html
 
